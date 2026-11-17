@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Se7a Platform | منصة التدريب على QCM لطلاب علوم الصحة في موريتانيا</title>
+<meta name="description" content="اكتشف Se7a، منصة قيد التطوير لمساعدة طلاب علوم الصحة في موريتانيا على التدرب على أسئلة QCM ومراجعة موادهم والاستعداد للامتحانات. سجّل اهتمامك لمتابعة أخبار الإطلاق.">
+<meta name="theme-color" content="#0B3B70">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Se7a Platform | منصة التدريب على QCM لطلاب علوم الصحة في موريتانيا">
+<meta property="og:description" content="منصة قيد التطوير لطلاب علوم الصحة في موريتانيا. سجّل اهتمامك لمتابعة أخبار الإطلاق.">
+<meta property="og:image" content="https://res.cloudinary.com/dobbzalqp/image/upload/v1794906300/fku187ekyedo3o6infdc.jpg">
+<link rel="icon" href="https://res.cloudinary.com/dobbzalqp/image/upload/v1794906300/fku187ekyedo3o6infdc.jpg">
+<style>
+/* ===== Tokens ===== */
+:root{--navy:#0B3B70;--blue:#14569A;--teal:#0CA69E;--teal2:#11C5B7;--white:#fff;--off:#F5F8FB;--pale:#EAF2F9;--text:#17324D;--muted:#617386;--line:#DCE6EF;--r:14px;--sh:0 10px 30px rgba(11,59,112,.10);--w:1120px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:"Noto Sans Arabic","Inter","Segoe UI",Tahoma,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.75;overflow-x:hidden}
+html:not([lang=ar]) body{line-height:1.6}
+img,video{max-width:100%}
+a{color:inherit}
+h1,h2,h3{line-height:1.3;margin:0;color:var(--navy);text-wrap:balance}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem)}
+p{margin:0}
+.wrap{width:min(100% - 2.5rem,var(--w));margin-inline:auto}
+section{padding-block:clamp(3.5rem,8vw,6rem)}
+:focus-visible{outline:3px solid var(--teal2);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;inset-inline-start:1rem;top:-4rem;background:var(--navy);color:#fff;padding:.6rem 1rem;z-index:100;border-radius:8px}
+.skip:focus{top:1rem}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s;cursor:pointer;font:inherit;font-weight:700;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--teal);color:#fff}.btn-p:hover{background:#0a8f88}
+.btn-g{border-color:rgba(255,255,255,.7);color:#fff;background:transparent}.btn-g:hover{background:rgba(255,255,255,.12)}
+/* Header */
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:1rem;min-height:68px}
+.logo img{height:46px;width:auto;display:block}
+nav{margin-inline-start:auto}
+nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--text);padding:.4rem .2rem;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--teal)}
+select{font:inherit;font-size:.9rem;padding:.45rem .6rem;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--text);min-height:40px}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--navy)}
+@media(max-width:900px){
+ .burger{display:grid;place-items:center;margin-inline-start:auto}
+ nav{position:absolute;inset-inline:0;top:100%;background:#fff;border-bottom:1px solid var(--line);display:none;margin:0}
+ nav.open{display:block}
+ nav ul{flex-direction:column;gap:0;padding:.5rem 1.25rem 1rem}
+ nav a{display:block;padding:.8rem 0}
+}
+/* Hero */
+.hero{position:relative;color:#fff;background:var(--navy);min-height:min(88vh,760px);display:flex;align-items:center;padding-block:3rem;isolation:isolate;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(11,59,112,.92) 15%,rgba(11,59,112,.62) 60%,rgba(11,59,112,.4))}
+html[dir=rtl] .hero::before{background:linear-gradient(260deg,rgba(11,59,112,.92) 15%,rgba(11,59,112,.62) 60%,rgba(11,59,112,.4))}
+.hero .wrap{display:grid;gap:2rem;grid-template-columns:1fr;align-items:center}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.4fr .8fr}}
+.eyebrow{display:inline-block;font-weight:700;color:var(--teal2);border-inline-start:4px solid var(--teal2);padding-inline-start:.7rem;margin-bottom:1rem}
+.hero h1{color:#fff;font-size:clamp(2rem,6.5vw,3.5rem)}
+.hero .sub{font-size:clamp(1.1rem,3vw,1.4rem);font-weight:600;color:#BFEFEA;margin-top:1rem}
+.hero .body{max-width:60ch;margin-top:1rem;color:#E4EEF8}
+.acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.note{margin-top:1rem;font-size:.92rem;color:#CFE0F0}
+.panel{background:#fff;color:var(--text);border-radius:var(--r);padding:1.4rem;box-shadow:0 20px 50px rgba(0,0,0,.3);border-top:5px solid var(--teal)}
+.panel h2{font-size:1.2rem}.panel p{color:var(--muted);margin:.6rem 0 1rem;font-size:.95rem}
+.panel .btn{width:100%}
+.vc{position:absolute;inset-block-end:1rem;inset-inline-end:1rem;background:rgba(11,59,112,.7);color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:999px;min-height:40px;padding:0 1rem;cursor:pointer;font:inherit;font-size:.85rem}
+/* Audience */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem;padding:0;list-style:none}
+.chips li{background:var(--pale);color:var(--navy);padding:.45rem 1rem;border-radius:999px;font-weight:600;font-size:.95rem}
+.lead{max-width:62ch;color:var(--muted);margin-top:1rem}
+/* Problem */
+.prob{background:var(--off)}
+.split{display:grid;gap:2.5rem}
+@media(min-width:900px){.split{grid-template-columns:1fr 1.1fr;align-items:start}}
+.prob ul{list-style:none;margin:0;padding:0;border-inline-start:3px solid var(--line)}
+.prob li{padding:.9rem 1.2rem;position:relative}
+.prob li::before{content:"";position:absolute;inset-inline-start:-8px;top:1.5rem;width:13px;height:13px;border-radius:50%;background:var(--blue);border:3px solid var(--off)}
+.sol{margin-top:1.5rem;padding:1.2rem;background:var(--navy);color:#fff;border-radius:var(--r)}
+/* Features */
+.fgrid{display:grid;gap:0;margin-top:2.5rem;grid-template-columns:1fr}
+@media(min-width:760px){.fgrid{grid-template-columns:1fr 1fr;column-gap:3rem}}
+.f{display:flex;gap:1rem;padding:1.3rem 0;border-top:1px solid var(--line)}
+.f svg{flex:none;width:44px;height:44px;padding:10px;border-radius:12px;background:var(--pale);color:var(--blue)}
+.f h3{font-size:1.1rem}.f p{color:var(--muted);margin-top:.3rem;font-size:.95rem}
+/* Preview */
+.prev{background:var(--pale)}
+.mock{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:1.3rem;border:1px solid var(--line)}
+.tag{display:inline-block;font-size:.8rem;font-weight:700;background:#FFF4D6;color:#6B4E00;padding:.2rem .7rem;border-radius:6px;margin-bottom:1rem}
+.bars{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted)}
+.pg{height:8px;background:var(--line);border-radius:9px;margin:.4rem 0 1.2rem;overflow:hidden}.pg i{display:block;width:40%;height:100%;background:var(--teal)}
+.opt{display:flex;gap:.7rem;align-items:center;padding:.7rem .9rem;border:1.5px solid var(--line);border-radius:10px;margin-top:.55rem;font-size:.95rem}
+.opt b{width:26px;height:26px;border-radius:50%;background:var(--off);display:grid;place-items:center;font-size:.8rem;flex:none}
+.opt.ok{border-color:var(--teal);background:#E8F8F6}.opt.ok b{background:var(--teal);color:#fff}
+.ex{margin-top:1rem;font-size:.9rem;color:var(--muted);border-inline-start:3px solid var(--teal);padding-inline-start:.8rem}
+/* Steps */
+.steps{list-style:none;padding:0;margin:2.5rem 0 0;display:grid;gap:1.5rem;counter-reset:s}
+@media(min-width:900px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps li{counter-increment:s;position:relative;padding-inline-start:3.4rem}
+@media(min-width:900px){.steps li{padding-inline-start:0;padding-top:3.6rem;border-top:2px solid var(--line)}}
+.steps li::before{content:counter(s);position:absolute;top:0;inset-inline-start:0;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}
+@media(min-width:900px){.steps li::before{top:-1.3rem}}
+.steps p{color:var(--muted);font-size:.95rem;margin-top:.3rem}
+/* Why */
+.why{background:var(--off)}
+.wl{display:grid;gap:1rem;margin-top:2rem;list-style:none;padding:0}
+@media(min-width:760px){.wl{grid-template-columns:1fr 1fr}}
+.wl li{padding:1rem 1.2rem;background:#fff;border-radius:var(--r);border-inline-start:4px solid var(--teal)}
+/* CTA */
+.cta{background:var(--navy);color:#fff;text-align:center}
+.cta h2{color:#fff}.cta p{max-width:62ch;margin:1rem auto;color:#D4E3F3}
+.cta .small{font-size:.9rem;color:#9FC0E0}
+/* FAQ */
+.faq{max-width:780px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:1.1rem 0;font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;color:var(--teal);line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding-bottom:1.1rem;color:var(--muted)}
+/* Footer */
+footer{background:#08294E;color:#C9D8E8;padding-block:3rem 2rem}
+footer .g{display:grid;gap:2rem}
+@media(min-width:800px){footer .g{grid-template-columns:1.5fr 1fr 1fr}}
+footer img{height:54px;width:auto;background:#fff;padding:6px 10px;border-radius:10px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
+footer a{text-decoration:none}footer a:hover{color:var(--teal2)}
+footer h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+.copy{margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.15);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5h16M4 12h10M4 19h16"/></symbol>
+<symbol id="i2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="i3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12l4 4L19 6"/></symbol>
+<symbol id="i4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+<symbol id="i5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M21 19H3"/></symbol>
+<symbol id="i6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+</svg>
+
+<header>
+<div class="wrap bar">
+ <a class="logo" href="#home" aria-label="Se7a Platform"><img src="https://res.cloudinary.com/dobbzalqp/image/upload/v1794906300/fku187ekyedo3o6infdc.jpg" alt="Se7a Platform" width="160" height="46"></a>
+ <nav id="nav" aria-label="Main">
+  <ul>
+   <li><a href="#home" data-i18n="n1">الرئيسية</a></li>
+   <li><a href="#about" data-i18n="n2">عن المنصة</a></li>
+   <li><a href="#features" data-i18n="n3">المميزات</a></li>
+   <li><a href="#how" data-i18n="n4">طريقة الاستخدام</a></li>
+   <li><a href="#faq" data-i18n="n5">الأسئلة الشائعة</a></li>
+   <li><a href="#contact" data-i18n="n6">تواصل معنا</a></li>
+  </ul>
+ </nav>
+ <label class="sr" style="position:absolute;left:-9999px" for="lang" data-i18n="langlbl">اللغة</label>
+ <select id="lang"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select>
+ <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="القائمة" data-i18n-aria="menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</header>
+
+<main id="main">
+<section class="hero" id="home" style="padding-block:3rem">
+ <video id="vid" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" src="https://res.cloudinary.com/dobbzalqp/video/upload/v1794906238/soaycr2ppbnc4uzlv2ie.mp4"></video>
+ <div class="wrap">
+  <div>
+   <span class="eyebrow" data-i18n="h0">قريبًا في موريتانيا</span>
+   <h1 data-i18n="h1">استعد لامتحانات علوم الصحة بثقة أكبر.</h1>
+   <p class="sub" data-i18n="h2">تدرّب على أسئلة QCM. افهم إجاباتك. وراجع بذكاء.</p>
+   <p class="body" data-i18n="h3">تطوّر Se7a لتمنح طلاب علوم الصحة في موريتانيا مساحة منظمة للتدرّب على أسئلة الاختيار من متعدد، ومراجعة المواد حسب التخصص، والاستعداد للامتحانات خطوة بخطوة.</p>
+   <div class="acts">
+    <a class="btn btn-p reg" href="https://forms.gle/deijkMBjj5HLuZf97" target="_blank" rel="noopener noreferrer" data-i18n="c1">سجّل اهتمامك الآن</a>
+    <a class="btn btn-g" href="#features" data-i18n="c2">اكتشف كيف تعمل Se7a</a>
+   </div>
+   <p class="note" data-i18n="h4">سجّل الآن لتكون من أوائل من يتلقون أخبار الإطلاق.</p>
+  </div>
+  <aside class="panel" aria-labelledby="pt">
+   <h2 id="pt" data-i18n="pt">Se7a تستعد للإطلاق</h2>
+   <p data-i18n="pp">يتم التسجيل عبر الاستبيان التمهيدي الرسمي. أرسل اهتمامك لتصلك أخبار الإطلاق. المنصة غير متاحة للاستخدام بعد.</p>
+   <a class="btn btn-p reg" href="https://forms.gle/deijkMBjj5HLuZf97" target="_blank" rel="noopener noreferrer" data-i18n="pb">افتح الاستبيان التمهيدي</a>
+  </aside>
+ </div>
+ <button class="vc" id="vc" type="button" aria-label="إيقاف الفيديو" data-i18n-aria="vpause">⏸</button>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <h2 data-i18n="a1">صُمّمت لتواكب طريقة مراجعتك، لا لتزيد ضغطك.</h2>
+  <p class="lead" data-i18n="a2">تُطوَّر Se7a لطلاب علوم الصحة الذين يريدون التدرّب، واكتشاف مواضع الضعف في الفهم، وتنظيم مراجعتهم. نطاق المواد والتخصصات سيتوسع تدريجيًا.</p>
+  <ul class="chips">
+   <li data-i18n="s1">طلاب الجذع المشترك</li><li data-i18n="s2">التمريض والقبالة</li><li data-i18n="s3">البيولوجيا الطبية</li><li data-i18n="s4">التخدير والإنعاش</li><li data-i18n="s5">التصوير الطبي والأشعة</li><li data-i18n="s6">العلاج الطبيعي وتقويم النطق</li><li data-i18n="s7">تخصصات صحية أخرى</li>
+  </ul>
+ </div>
+</section>
+
+<section class="prob">
+ <div class="wrap split">
+  <div>
+   <h2 data-i18n="p1">المشكلة ليست دائمًا في عدد ساعات المراجعة، بل في طريقة استثمارها.</h2>
+   <div class="sol"><p data-i18n="p7">Se7a أداة قيد التطوير لجعل التدرّب على QCM أكثر تنظيمًا وهدفًا، من دون وعود بنتائج مضمونة.</p></div>
+  </div>
+  <ul>
+   <li data-i18n="p2">تراجع مقررًا كاملًا دون أن تعرف أي المفاهيم ما زالت غير واضحة.</li>
+   <li data-i18n="p3">تحلّ أسئلة دون أن تفهم لماذا كانت الإجابة خاطئة.</li>
+   <li data-i18n="p4">تصل إلى الامتحان دون أن تكون قد اختبرت معرفتك فعلًا.</li>
+   <li data-i18n="p5">تبحث في مصادر متفرقة عن أسئلة تدريب مناسبة.</li>
+   <li data-i18n="p6">تقضي وقتًا ثمينًا في التكرار دون طريقة واضحة لقياس تقدمك.</li>
+  </ul>
+ </div>
+</section>
+
+<section id="features">
+ <div class="wrap">
+  <h2 data-i18n="f0">كل تدريب له هدف. وكل إجابة فرصة للفهم.</h2>
+  <p class="lead" data-i18n="f00">تجمع Se7a بين التدريب والمراجعة والتصحيح في تجربة واحدة، حتى تتمكن من التركيز على ما تحتاج إلى فهمه أكثر.</p>
+  <div class="fgrid">
+   <div class="f"><svg aria-hidden="true"><use href="#i1"/></svg><div><h3 data-i18n="f1t">تدرّب حسب المادة</h3><p data-i18n="f1d">اختر المادة التي تريد مراجعتها، وركّز على الأسئلة المرتبطة بها بدل التنقل العشوائي بين الموضوعات.</p></div></div>
+   <div class="f"><svg aria-hidden="true"><use href="#i2"/></svg><div><h3 data-i18n="f2t">اختبارات QCM تدريبية</h3><p data-i18n="f2d">اختبر فهمك من خلال أسئلة الاختيار من متعدد، وتدرّب على هذا النوع من الأسئلة قبل موعد الامتحان.</p></div></div>
+   <div class="f"><svg aria-hidden="true"><use href="#i3"/></svg><div><h3 data-i18n="f3t">تصحيح واضح</h3><p data-i18n="f3d">راجع إجاباتك بعد التدريب، واعرف الإجابة الصحيحة وما الذي تحتاج إلى مراجعته.</p></div></div>
+   <div class="f"><svg aria-hidden="true"><use href="#i4"/></svg><div><h3 data-i18n="f4t">افهم سبب الإجابة</h3><p data-i18n="f4d">لا تكتفِ بمعرفة ما إذا كانت إجابتك صحيحة أو خاطئة. الهدف هو مساعدتك على فهم السبب عندما تكون التفسيرات متاحة.</p></div></div>
+   <div class="f"><svg aria-hidden="true"><use href="#i5"/></svg><div><h3 data-i18n="f5t">تابع تقدمك</h3><p data-i18n="f5d">استخدم نتائج تدريباتك لتتعرف على نقاط قوتك والموضوعات التي تستحق مراجعة إضافية.</p></div></div>
+   <div class="f"><svg aria-hidden="true"><use href="#i6"/></svg><div><h3 data-i18n="f6t">راجع من هاتفك</h3><p data-i18n="f6d">تجربة مصممة لتكون سهلة الاستخدام على الهاتف والحاسوب، حتى تكون المراجعة أكثر مرونة.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="prev">
+ <div class="wrap split">
+  <div>
+   <h2 data-i18n="v1">من اختيار المادة إلى مراجعة الإجابة.</h2>
+   <p class="lead" data-i18n="v2">اختر التخصص، ثم المادة، ثم ابدأ اختبار QCM، وأرسل إجاباتك، وراجع التصحيح، واستخدم النتيجة لتحديد جلسة المراجعة التالية.</p>
+  </div>
+  <div class="mock" role="img" aria-label="Illustration">
+   <span class="tag" data-i18n="v3">تصوّر توضيحي للتجربة المقترحة</span>
+   <div class="bars"><span data-i18n="v4">مثال: الفيزيولوجيا</span><span>2 / 5</span></div>
+   <div class="pg"><i></i></div>
+   <p style="font-weight:700" data-i18n="v5">ما العضو المسؤول عن ضخ الدم في الجسم؟</p>
+   <div class="opt"><b>A</b><span data-i18n="v6">الكبد</span></div>
+   <div class="opt ok"><b>B</b><span data-i18n="v7">القلب ✔ (الإجابة الصحيحة)</span></div>
+   <div class="opt"><b>C</b><span data-i18n="v8">الكلية</span></div>
+   <p class="ex" data-i18n="v9">شرح توضيحي: يضخ القلب الدم عبر الأوعية الدموية إلى أنحاء الجسم. السؤال مثال توضيحي وليس من امتحان رسمي.</p>
+  </div>
+ </div>
+</section>
+
+<section id="how">
+ <div class="wrap">
+  <h2 data-i18n="o0">رحلتك مع Se7a بسيطة.</h2>
+  <p class="lead" data-i18n="o00">هذه هي التجربة التي نعمل على بنائها.</p>
+  <ol class="steps">
+   <li><h3 data-i18n="o1">اختر تخصصك ومادتك</h3><p data-i18n="o1d">ابحث عن المادة المرتبطة بمسارك الدراسي.</p></li>
+   <li><h3 data-i18n="o2">ابدأ التدريب</h3><p data-i18n="o2d">تدرّب على أسئلة واختبارات QCM منظمة حسب المادة.</p></li>
+   <li><h3 data-i18n="o3">راجع التصحيح</h3><p data-i18n="o3d">افهم النتيجة واطّلع على الشروح المتاحة.</p></li>
+   <li><h3 data-i18n="o4">حدّد ما ستراجعه بعد ذلك</h3><p data-i18n="o4d">استفد من النتائج لتوجيه مراجعتك القادمة.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="why">
+ <div class="wrap">
+  <h2 data-i18n="y0">مراجعة أكثر تنظيمًا، دون تعقيد إضافي.</h2>
+  <ul class="wl">
+   <li data-i18n="y1">ملاءمة لاحتياجات طلاب علوم الصحة في موريتانيا.</li>
+   <li data-i18n="y2">تنظيم حسب التخصص والمادة.</li>
+   <li data-i18n="y3">تدريب وتصحيح في تجربة واحدة مخطط لها.</li>
+   <li data-i18n="y4">تجربة تراعي استخدام الهاتف.</li>
+   <li data-i18n="y5">تطوير ينطلق من احتياجات الطلاب.</li>
+   <li data-i18n="y6">تركيز على مراجعة مفيدة بدل الميزات المشتتة.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap">
+  <h2 data-i18n="r1">كن من أوائل من يعرفون عند إطلاق Se7a.</h2>
+  <p data-i18n="r2">نعمل على تطوير Se7a لتناسب احتياجات طلاب علوم الصحة في موريتانيا. سجّل اهتمامك عبر الاستبيان التمهيدي، وسنتيح لك فرصة متابعة أخبار المنصة وتطورها حتى موعد الإطلاق.</p>
+  <a class="btn btn-p reg" href="https://forms.gle/deijkMBjj5HLuZf97" target="_blank" rel="noopener noreferrer" data-i18n="r3">التسجيل في الاستبيان التمهيدي</a>
+  <p class="small" data-i18n="r4">يستغرق الاستبيان بضع دقائق. التسجيل لمتابعة أخبار الإطلاق فقط، ولا يعني الوصول الفوري إلى المنصة.</p>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap faq">
+  <h2 data-i18n="q0" style="margin-bottom:1.5rem">الأسئلة الشائعة</h2>
+  <details><summary data-i18n="q1">ما هي منصة Se7a؟</summary><p data-i18n="a_1">Se7a منصة تعليمية قيد التطوير تهدف إلى مساعدة طلاب علوم الصحة في موريتانيا على التدرب على أسئلة QCM ومراجعة موادهم بطريقة أكثر تنظيمًا.</p></details>
+  <details><summary data-i18n="q2">هل المنصة متاحة الآن؟</summary><p data-i18n="a_2">المنصة في مرحلة ما قبل الإطلاق. يمكنك التسجيل عبر الاستبيان التمهيدي لمتابعة أخبار الإطلاق.</p></details>
+  <details><summary data-i18n="q3">من يمكنه الاستفادة من Se7a؟</summary><p data-i18n="a_3">تستهدف المنصة طلاب المدرسة الوطنية العليا لعلوم الصحة وطلاب التخصصات والمؤسسات الصحية الأخرى في موريتانيا، وفقًا لتوفر المواد المناسبة.</p></details>
+  <details><summary data-i18n="q4">هل ستشمل المنصة جميع التخصصات؟</summary><p data-i18n="a_4">نهدف إلى خدمة مختلف تخصصات علوم الصحة. وسيتم تحديد نطاق المواد والتخصصات المتاحة تدريجيًا.</p></details>
+  <details><summary data-i18n="q5">هل يمكنني التدريب على QCM حسب المادة؟</summary><p data-i18n="a_5">تنظيم التدريب حسب المادة والتخصص جزء أساسي من التجربة التي نعمل على تطويرها.</p></details>
+  <details><summary data-i18n="q6">هل سأحصل على تصحيح وشرح للإجابات؟</summary><p data-i18n="a_6">التصحيح وشرح الإجابات من الميزات المخطط لها. وسيعتمد توفر التفاصيل على المواد والوظائف التي يتم إطلاقها.</p></details>
+  <details><summary data-i18n="q7">كيف أسجّل اهتمامي؟</summary><p data-i18n="a_7">اضغط على زر التسجيل في هذه الصفحة، ثم أكمل الاستبيان التمهيدي عبر Google Forms.</p></details>
+  <details><summary data-i18n="q8">هل التسجيل يعني أنني سأحصل على وصول فوري؟</summary><p data-i18n="a_8">لا. التسجيل يعبّر عن اهتمامك ويساعدك على متابعة أخبار الإطلاق، ولا يعني أن المنصة متاحة حاليًا.</p></details>
+ </div>
+</section>
+</main>
+
+<footer id="contact">
+ <div class="wrap">
+  <div class="g">
+   <div>
+    <img src="https://res.cloudinary.com/dobbzalqp/image/upload/v1794906300/fku187ekyedo3o6infdc.jpg" alt="Se7a Platform" width="160" height="54" loading="lazy">
+    <p style="margin-top:1rem;max-width:44ch" data-i18n="z1">Se7a منصة قيد التطوير تهدف إلى مساعدة طلاب علوم الصحة في موريتانيا على مراجعة موادهم والتدرب على أسئلة QCM بطريقة منظمة.</p>
+    <p style="margin-top:.6rem;color:#fff;font-weight:700" data-i18n="z2">راجع. تدرّب. تقدّم.</p>
+   </div>
+   <div><h3 data-i18n="z3">روابط</h3><ul>
+    <li><a href="#home" data-i18n="n1">الرئيسية</a></li><li><a href="#about" data-i18n="n2">عن المنصة</a></li><li><a href="#features" data-i18n="n3">المميزات</a></li><li><a href="#how" data-i18n="n4">طريقة الاستخدام</a></li><li><a href="#faq" data-i18n="n5">الأسئلة الشائعة</a></li></ul></div>
+   <div><h3 data-i18n="z4">قبل الإطلاق</h3><ul>
+    <li><a class="reg" href="https://forms.gle/deijkMBjj5HLuZf97" target="_blank" rel="noopener noreferrer" data-i18n="z5">الاستبيان التمهيدي</a></li>
+    <li>العربية · Français · English</li></ul></div>
+  </div>
+  <p class="copy">© <span id="yr"></span> Se7a Platform</p>
+ </div>
+</footer>
+
+<script>
+/* ===== i18n: Arabic is read from the markup itself; FR/EN dictionaries below ===== */
+const D={fr:{
+skip:"Aller au contenu",langlbl:"Langue",menu:"Menu",vpause:"Mettre la vidéo en pause",vplay:"Lancer la vidéo",
+n1:"Accueil",n2:"À propos",n3:"Fonctionnalités",n4:"Comment ça marche",n5:"FAQ",n6:"Contact",
+h0:"Bientôt en Mauritanie",h1:"Préparez vos examens en sciences de la santé avec plus de confiance.",h2:"Entraînez-vous aux QCM. Comprenez vos réponses. Révisez intelligemment.",
+h3:"Se7a est en cours de développement pour offrir aux étudiants en sciences de la santé en Mauritanie un espace organisé pour s'entraîner aux QCM, réviser leurs matières par spécialité et se préparer aux examens pas à pas.",
+c1:"Je m'inscris maintenant",c2:"Découvrir comment fonctionne Se7a",h4:"Inscrivez-vous pour être parmi les premiers informés du lancement.",
+pt:"Se7a prépare son lancement",pp:"L'inscription se fait via le formulaire officiel de pré-lancement. Exprimez votre intérêt pour recevoir les nouvelles du lancement. La plateforme n'est pas encore disponible.",pb:"Ouvrir le formulaire de pré-lancement",
+a1:"Conçue pour suivre votre façon de réviser, pas pour ajouter du stress.",a2:"Se7a est développée pour les étudiants en santé qui veulent s'entraîner, repérer leurs lacunes et organiser leurs révisions. Les matières et spécialités seront élargies progressivement.",
+s1:"Étudiants du tronc commun",s2:"Soins infirmiers et sage-femme",s3:"Biologie médicale",s4:"Anesthésie-réanimation",s5:"Imagerie médicale et radiologie",s6:"Kinésithérapie et orthophonie",s7:"Autres filières de santé",
+p1:"Le problème n'est pas toujours le nombre d'heures de révision, mais la manière de les utiliser.",p2:"Réviser un cours entier sans savoir quelles notions restent floues.",p3:"Faire des questions sans comprendre pourquoi une réponse est fausse.",p4:"Arriver à l'examen sans avoir testé ses connaissances.",p5:"Chercher des questions d'entraînement adaptées dans des sources dispersées.",p6:"Répéter sans moyen clair de mesurer sa progression.",
+p7:"Se7a est un outil en développement pour rendre l'entraînement aux QCM plus organisé et plus utile, sans promesse de résultat garanti.",
+f0:"Chaque entraînement a un but. Chaque réponse est une occasion de comprendre.",f00:"Se7a réunit entraînement, révision et correction dans une seule expérience, pour vous concentrer sur ce qu'il vous faut mieux comprendre.",
+f1t:"Entraînez-vous par matière",f1d:"Choisissez la matière à réviser et concentrez-vous sur les questions qui s'y rapportent, sans zapper d'un sujet à l'autre.",
+f2t:"Quiz QCM d'entraînement",f2d:"Testez votre compréhension avec des questions à choix multiples et habituez-vous à ce format avant l'examen.",
+f3t:"Corrections claires",f3d:"Passez en revue vos réponses après l'entraînement et repérez la bonne réponse et ce qu'il faut revoir.",
+f4t:"Comprenez le pourquoi",f4d:"Ne vous contentez pas de savoir si vous avez juste ou faux : l'objectif est de vous aider à comprendre, lorsque des explications sont disponibles.",
+f5t:"Suivez vos progrès",f5d:"Utilisez vos résultats pour identifier vos points forts et les sujets qui méritent plus de révision.",
+f6t:"Révisez sur votre téléphone",f6d:"Une expérience pensée pour le téléphone comme pour l'ordinateur, pour des révisions plus souples.",
+v1:"Du choix de la matière à la revue de la réponse.",v2:"Choisissez la spécialité, puis la matière, lancez un QCM, envoyez vos réponses, consultez la correction et décidez de votre prochaine séance de révision.",
+v3:"Aperçu illustratif de l'expérience envisagée",v4:"Exemple : Physiologie",v5:"Quel organe pompe le sang dans le corps ?",v6:"Le foie",v7:"Le cœur ✔ (bonne réponse)",v8:"Le rein",v9:"Explication illustrative : le cœur propulse le sang dans les vaisseaux vers tout l'organisme. Question d'exemple, qui ne provient d'aucun examen officiel.",
+o0:"Votre parcours avec Se7a est simple.",o00:"Voici l'expérience que nous construisons.",o1:"Choisissez spécialité et matière",o1d:"Trouvez la matière liée à votre cursus.",o2:"Commencez l'entraînement",o2d:"Pratiquez des QCM et quiz organisés par matière.",o3:"Consultez la correction",o3d:"Comprenez le résultat et lisez les explications disponibles.",o4:"Décidez quoi réviser ensuite",o4d:"Servez-vous des résultats pour orienter vos prochaines révisions.",
+y0:"Une révision plus organisée, sans complexité en plus.",y1:"Adaptée aux besoins des étudiants en santé en Mauritanie.",y2:"Organisation par spécialité et par matière.",y3:"Entraînement et correction dans une même expérience prévue.",y4:"Une expérience pensée pour le mobile.",y5:"Un développement guidé par les besoins des étudiants.",y6:"Priorité à une révision utile plutôt qu'à des fonctions qui distraient.",
+r1:"Soyez parmi les premiers informés du lancement de Se7a.",r2:"Nous développons Se7a pour répondre aux besoins des étudiants en sciences de la santé en Mauritanie. Exprimez votre intérêt via le formulaire de pré-lancement et suivez l'évolution de la plateforme jusqu'au lancement.",r3:"S'inscrire au formulaire de pré-lancement",r4:"Le formulaire prend quelques minutes. L'inscription sert uniquement à recevoir les nouvelles du lancement et ne donne pas un accès immédiat.",
+q0:"Questions fréquentes",
+q1:"Qu'est-ce que Se7a ?",a_1:"Se7a est une plateforme éducative en développement qui aide les étudiants en sciences de la santé en Mauritanie à s'entraîner aux QCM et à réviser de façon plus organisée.",
+q2:"La plateforme est-elle disponible ?",a_2:"La plateforme est en phase de pré-lancement. Vous pouvez remplir le formulaire de pré-lancement pour suivre les nouvelles.",
+q3:"Qui peut en profiter ?",a_3:"Elle s'adresse aux étudiants de l'École Nationale Supérieure des Sciences de la Santé et des autres filières et établissements de santé en Mauritanie, selon la disponibilité des matières.",
+q4:"Toutes les spécialités seront-elles couvertes ?",a_4:"Nous visons à servir les différentes filières des sciences de la santé. Le périmètre des matières et spécialités sera défini progressivement.",
+q5:"Puis-je m'entraîner aux QCM par matière ?",a_5:"L'organisation de l'entraînement par matière et par spécialité est au cœur de l'expérience que nous développons.",
+q6:"Aurai-je des corrections et des explications ?",a_6:"Corrections et explications sont des fonctionnalités prévues. Leur disponibilité dépendra des matières et fonctions lancées.",
+q7:"Comment m'inscrire ?",a_7:"Cliquez sur le bouton d'inscription de cette page, puis remplissez le formulaire de pré-lancement sur Google Forms.",
+q8:"L'inscription donne-t-elle un accès immédiat ?",a_8:"Non. L'inscription exprime votre intérêt et vous permet de suivre le lancement ; elle ne signifie pas que la plateforme est déjà disponible.",
+z1:"Se7a est une plateforme en développement qui aide les étudiants en sciences de la santé en Mauritanie à réviser leurs matières et à s'entraîner aux QCM de façon organisée.",z2:"Réviser. S'entraîner. Progresser.",z3:"Liens",z4:"Avant le lancement",z5:"Formulaire de pré-lancement",
+title:"Se7a Platform | Entraînement aux QCM pour les étudiants en sciences de la santé en Mauritanie",desc:"Découvrez Se7a, plateforme en développement pour aider les étudiants en sciences de la santé en Mauritanie à s'entraîner aux QCM et préparer leurs examens. Inscrivez-vous pour suivre le lancement."
+},en:{
+skip:"Skip to content",langlbl:"Language",menu:"Menu",vpause:"Pause video",vplay:"Play video",
+n1:"Home",n2:"About",n3:"Features",n4:"How it works",n5:"FAQ",n6:"Contact",
+h0:"Coming soon to Mauritania",h1:"Prepare for your health-sciences exams with more confidence.",h2:"Practice MCQs. Understand your answers. Revise smarter.",
+h3:"Se7a is being built to give health-sciences students in Mauritania an organized place to practice multiple-choice questions, revise subjects by specialty, and prepare for exams step by step.",
+c1:"Register your interest",c2:"See how Se7a works",h4:"Register now to be among the first to hear about the launch.",
+pt:"Se7a is getting ready to launch",pp:"Registration happens through the official pre-launch form. Share your interest to receive launch updates. The platform is not available to use yet.",pb:"Open the pre-launch form",
+a1:"Built around how you revise, not to add to your stress.",a2:"Se7a is being developed for health-sciences students who want to practice, spot gaps in their understanding and organize their revision. Subjects and specialties will expand gradually.",
+s1:"Common-core students",s2:"Nursing and midwifery",s3:"Medical biology",s4:"Anesthesia and resuscitation",s5:"Medical imaging and radiology",s6:"Physiotherapy and speech therapy",s7:"Other health disciplines",
+p1:"The problem isn't always how many hours you revise, but how you use them.",p2:"Revising a whole course without knowing which concepts are still unclear.",p3:"Doing questions without understanding why an answer is wrong.",p4:"Reaching the exam without having tested your knowledge.",p5:"Searching scattered sources for suitable practice questions.",p6:"Repeating material with no clear way to measure progress.",
+p7:"Se7a is a tool in development to make QCM practice more organized and purposeful, with no promise of guaranteed results.",
+f0:"Every practice session has a purpose. Every answer is a chance to understand.",f00:"Se7a brings practice, revision and correction into one experience so you can focus on what you need to understand better.",
+f1t:"Practice by subject",f1d:"Pick the subject you want to revise and focus on its questions instead of jumping randomly between topics.",
+f2t:"QCM practice quizzes",f2d:"Test your understanding with multiple-choice questions and get used to the format before exam day.",
+f3t:"Clear corrections",f3d:"Review your answers after practice and see the right answer and what you need to revisit.",
+f4t:"Understand why",f4d:"Don't stop at right or wrong. The goal is to help you understand the reason, where explanations are available.",
+f5t:"Track your progress",f5d:"Use your practice results to see your strengths and the topics that deserve more revision.",
+f6t:"Revise from your phone",f6d:"An experience designed to be easy on phone and computer, so revision fits your life.",
+v1:"From choosing a subject to reviewing an answer.",v2:"Pick a specialty, then a subject, start a QCM quiz, submit your answers, review the corrections and use the result to plan your next revision session.",
+v3:"Illustrative concept of the proposed experience",v4:"Example: Physiology",v5:"Which organ pumps blood around the body?",v6:"Liver",v7:"Heart ✔ (correct answer)",v8:"Kidney",v9:"Illustrative explanation: the heart pushes blood through the vessels to the whole body. This is a sample question, not from any official exam.",
+o0:"Your journey with Se7a is simple.",o00:"This is the experience we are building.",o1:"Choose your specialty and subject",o1d:"Find the subject that matches your academic path.",o2:"Start practicing",o2d:"Practice QCM questions and quizzes organized by subject.",o3:"Review the correction",o3d:"Understand your result and read the explanations available.",o4:"Decide what to revise next",o4d:"Use your results to guide your next revision.",
+y0:"More organized revision, without extra complexity.",y1:"Relevant to the needs of health-sciences students in Mauritania.",y2:"Organized by specialty and subject.",y3:"Practice and feedback in one planned experience.",y4:"A mobile-friendly approach.",y5:"Development shaped by student needs.",y6:"Focused on useful revision rather than distracting features.",
+r1:"Be among the first to know when Se7a launches.",r2:"We are building Se7a for the needs of health-sciences students in Mauritania. Register your interest through the pre-launch form and follow the platform's progress until launch.",r3:"Join the pre-launch form",r4:"The form takes a few minutes. Registering is only to receive launch updates and does not give immediate access.",
+q0:"Frequently asked questions",
+q1:"What is Se7a?",a_1:"Se7a is an educational platform in development that helps health-sciences students in Mauritania practice QCM questions and revise in a more organized way.",
+q2:"Is the platform available now?",a_2:"The platform is in its pre-launch phase. You can register through the pre-launch form to follow launch news.",
+q3:"Who can benefit from Se7a?",a_3:"It is aimed at students of the École Nationale Supérieure des Sciences de la Santé and other health programs and institutions in Mauritania, depending on the availability of suitable subjects.",
+q4:"Will it cover all specialties?",a_4:"We aim to serve the different health-sciences specialties. The range of available subjects and specialties will be defined gradually.",
+q5:"Can I practice QCM by subject?",a_5:"Organizing practice by subject and specialty is a core part of the experience we are developing.",
+q6:"Will I get corrections and explanations?",a_6:"Corrections and explanations are planned features. Their availability will depend on the subjects and functions that launch.",
+q7:"How do I register my interest?",a_7:"Click the registration button on this page, then complete the pre-launch form on Google Forms.",
+q8:"Does registering give me immediate access?",a_8:"No. Registering expresses your interest and lets you follow launch news; it does not mean the platform is available now.",
+z1:"Se7a is a platform in development that helps health-sciences students in Mauritania revise their subjects and practice QCM questions in an organized way.",z2:"Revise. Practice. Progress.",z3:"Links",z4:"Before launch",z5:"Pre-launch form",
+title:"Se7a Platform | QCM practice for health-sciences students in Mauritania",desc:"Discover Se7a, a platform in development to help health-sciences students in Mauritania practice QCM questions, revise and prepare for exams. Register your interest to follow the launch."
+}};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const meta=$('meta[name=description]');
+const AR={};
+$$('[data-i18n]').forEach(e=>{if(!(e.dataset.i18n in AR))AR[e.dataset.i18n]=e.textContent});
+AR.title=document.title;AR.desc=meta.content;AR.langlbl="اللغة";AR.menu="القائمة";AR.vpause="إيقاف الفيديو";AR.vplay="تشغيل الفيديو";
+D.ar=AR;
+function setLang(l){
+ const d=D[l]||AR,y=scrollY;
+ $$('[data-i18n]').forEach(e=>{const v=d[e.dataset.i18n];if(v!=null)e.textContent=v});
+ $$('[data-i18n-aria]').forEach(e=>{if(e.id!=='vc')e.setAttribute('aria-label',d[e.dataset.i18nAria])});
+ const h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';
+ document.title=d.title;meta.content=d.desc;$('#lang').value=l;
+ setVC();scrollTo(0,y);
+ try{localStorage.setItem('se7a-lang',l)}catch(e){}
+}
+$('#lang').addEventListener('change',e=>setLang(e.target.value));
+/* ===== Mobile menu ===== */
+const nav=$('#nav'),bg=$('#burger');
+bg.addEventListener('click',()=>{const o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');bg.setAttribute('aria-expanded','false');bg.focus()}});
+/* ===== Video: fallback + play/pause + reduced motion ===== */
+const v=$('#vid'),vc=$('#vc');
+function setVC(){const l=document.documentElement.lang;const d=D[l]||AR;vc.setAttribute('aria-label',v.paused?d.vplay:d.vpause);vc.textContent=v.paused?'▶':'⏸'}
+vc.addEventListener('click',()=>{v.paused?v.play().catch(()=>{}):v.pause();setVC()});
+v.addEventListener('error',()=>{v.remove();vc.hidden=true});
+v.addEventListener('play',setVC);v.addEventListener('pause',setVC);
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){v.removeAttribute('autoplay');v.pause()}
+/* ===== Init ===== */
+$('#yr').textContent=new Date().getFullYear();
+let saved='ar';try{saved=localStorage.getItem('se7a-lang')||'ar'}catch(e){}
+if(saved!=='ar'&&D[saved])setLang(saved);else setVC();
+</script>
+</body>
+</html>
